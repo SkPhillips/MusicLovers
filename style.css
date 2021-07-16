@@ -45,6 +45,10 @@ a,
     text-decoration: none;
 }
 
+.social-icons{
+    width: 100%;
+}
+
 a:hover,
 a:focus, 
 .social-text:hover, 
@@ -100,7 +104,7 @@ a:focus,
 
 .sign-up{
     text-decoration: underline;
-    padding: .88em 0;
+    padding: .4em 0;
 }
 
 .blurb {
@@ -158,6 +162,7 @@ a:focus,
 
                                 /* Button */
 
+
 .btn-action{
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
@@ -169,11 +174,12 @@ a:focus,
     cursor: pointer;
     max-width: 100%;
     max-height: 100%;
-    font-size: 100%;
+    font-size: 1.2rem;
     padding: .5em;
     position: relative;
     text-align: center;
     z-index: 2;
+
 }
 
 .btn-action:hover,
@@ -297,7 +303,7 @@ img{
 .intro-modal{
     padding: 1em 1em;
     background: none;
-    margin-top: -23.5em;
+    margin-top: -29em;
 }
 .intro-modal h2 {
     margin-bottom: 3em;
@@ -306,6 +312,12 @@ img{
     padding: 1.5em;
     background: rgb(255, 255, 255, 0.5);
     border: solid 2px #fff;
+}
+
+footer{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2em;
 }
 
                                             /* End Layout */
@@ -351,49 +363,166 @@ img{
 }
 
                                 /* End Animation*/
-                                /* =================== */
 
-                     /* Media Queries*/
 
-/* @media (min-width: 700px) {
-    .modal-container{
+@media (min-width: 750px) {
+    .modals{
+        display: flex;
         flex-wrap: wrap;
-    }
-                     }                  */
-
-@media (min-width: 850px) {
-    
-    .main-title{
-        font-size: 4rem;
+        justify-content: space-evenly;
     }
 
-    .modal-container {
-        flex-direction: row;
-        margin: -800px auto;
+    .card{
+        width: 325px;
+    }
+
+    .subtitle{
+        font-size: 1.6rem;
+    }
+
+    .intro-modal{
+        justify-content: center;
+    }
+
+    .intro-title{
+        font-size: 1.1rem;
+    }
+
+
+}
+
+@media (min-width: 930px){
+
+    .modals{
+        margin-top: -40em;
+    }
+
+
+    .modals{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+
+    .top-cards{
+        display: inline-block;
+        
+    }
+
+    .top-card-1{
+        margin-right: 5.61em;
+    }
+
+    .top-card-2{
+        margin-left: 5.61em;
+    }
+
+    .top-right-download-card{
+        margin-left: -1.7em;
+    }
+
+    .bottom-right-form-card{
+        margin-right: -1.7em;
+    }
+
+
+    .intro-blurb {
+        width: 245px;
+    }
+
+
+    .intro-modal p {
+        padding: 0;
+    }
+
+    .modal-container{
+        max-width: 1000px;
+        margin: 1em auto;
+    }
+}
+
+@media (min-width: 1000px){
+    .intro-modal{
+        font-size: 1.2rem;
+        margin-top: -25em;
+    }
+
+    .top-right-download-card{
+        margin-left: -6em;
+    }
+
+    .bottom-right-form-card{
+        margin-right: -6em;
+    }
+
+    .intro-blurb {
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 1400px){
+
+    .intro-title{
+        font-size: 2rem;
+    }
+    .intro-modal{
+        font-size: 1.1rem;
+        padding: 0;
+    }
+
+    .company-title {
+        font-size: 1.2rem;
+    }
+    .intro-blurb {
+        width: 280px;
+        padding: 1em;
+    }
+
+    .modal-container{
+        display:flex;
+        margin-top: 2em auto;
+        justify-content: center;
+    }
+
+    .modals{
+        display: flex;        
+        flex-wrap: unset;
+        width: 1518px; 
         align-items: flex-end;
+        justify-content: unset;
+        margin-top: -39em;
     }
 
-    .info-card {
-        width: 50em;
-        margin: .5em;
+    .modal {
+        width: 290px;  
     }
+
     
+    .top-card-2{
+        margin-left: 0;
+    }
+
+    .top-card-1{
+        margin-right: 0;
+    }
+
     .bottom-left-download-card { order: -1000;}
     .center-intro-card { order: 1;}
     .bottom-right-social-card { order: 2;} 
     .bottom-right-form-card { order: 3;}
+    
+    .info-card{
+        margin: .5em;
+    }
 
-    .intro-modal{
-        padding: 1em 1em;
-        background: none;
+    .top-left-blog-card{
+        margin-right: 9.6em;
     }
-    .intro-modal h2 {
-        margin-bottom: 3em;
-    }
-    .intro-modal p{
-        padding: 1.5em;
-        background: rgb(255, 255, 255, 0.5);
-        border: solid 2px #fff;
+
+    .bottom-right-social-card{
+        margin-left: 9.6em;
     }
 
 }
